@@ -7,12 +7,54 @@
     <title>Portfolio</title>
     <link rel="stylesheet" href="./style.css">
 </head>
-<body>
-    <header class="h-16 w-full bg-gray-50">
+<body class="bg-gray-600 h-[220vh]">
+    <!-- header section -->
+    <header id="home" class="header-bg relative md:sticky top-0 md:h-20 w-full bg-gray-900 items-center flex flex-col md:flex-row ">
+        <div class="flex w-full md:w-1/4 items-center h-20 nav-bar">
+            <!-- logo -->
+            <span class="w-1/4 mx-6 text-4xl  transition-colors cursor-pointer">
+                <a class="no-underline text-gray-300 hover:text-indigo-200 transition-colors font-serif " href="#home">Portfolio</a>
+            </span>
 
+            <!-- menu button -->
+            <div onclick="myFunction()" class="flex md:hidden w-fit absolute right-6 font-semibold text-xl cursor-pointer">
+                <span class="My-Menu menu hidden text-gray-500 sm:transition-colors sm:hover:text-zinc-200"> Menu</span>    
+                <span class="My-Close close flex text-gray-500 sm:transition-colors sm:hover:text-zinc-200"> Close</span>    
+            </div>
+        </div>
+
+        <!-- mobile menu and main -->
+        <nav class="fixed md:top-0 top-20 bg-gray-900 h-fit MyDiv mobile-menu md:flex w-full md:w-[70%] lg:w-[60%]  md:box-border md:absolute md:right-0 md:h-full">
+            <ul class="flex flex-col md:flex-row h-full items-center w-full md:space-x-4 lg:space-x-8 text-2xl font-medium font-serif">
+                <li class="w-[24vw] md:w-fit items-start transition-all box-border mx-auto md:mx-0 my-2"><a class="mx-12 md:mx-0 text-gray-500 sm:hover:text-zinc-200 sm:transition-colors " href="#home">Home</a></li>
+                <li class="w-[24vw] md:w-fit items-start transition-all box-border mx-auto md:mx-0 my-2"><a class="mx-12 md:mx-0 text-gray-500 sm:hover:text-zinc-200 sm:transition-colors " href="">About</a></li>
+                <li class="w-[24vw] md:w-fit items-start transition-all box-border mx-auto md:mx-0 my-2"><a class="mx-12 md:mx-0 text-gray-500 sm:hover:text-zinc-200 sm:transition-colors " href="">Project</a></li>
+                <li class="w-[24vw] md:w-fit items-start transition-all box-border mx-auto md:mx-0 my-2"><a class="mx-12 md:mx-0 text-gray-500 sm:hover:text-zinc-200 sm:transition-colors " href="">Skills</a></li>
+                <li class="w-[24vw] md:w-fit items-start transition-all box-border mx-auto md:mx-0 my-2"><a class="mx-12 md:mx-0 text-gray-500 sm:hover:text-zinc-200 sm:transition-colors " href="">Services</a></li>
+                <li class="w-[24vw] md:w-fit items-start transition-all box-border mx-auto md:mx-0 my-2"><a class="mx-12 md:mx-0 text-gray-500 sm:hover:text-zinc-200 sm:transition-colors " href="">Contacts</a></li>
+            </ul>
+        </nav>
     </header>
 
+    <section class="text-6xl text-green-600">
+        hey
+    </section>
 
+
+
+    <script>
+        function myFunction() {
+        let x = document.querySelector(".MyDiv");
+        let y = document.querySelector(".My-Menu");
+        let z = document.querySelector(".My-Close");
+        let n = document.querySelector(".nav-bar");
+            x.classList.toggle("mobile-menu");
+            y.classList.toggle("menu");
+            z.classList.toggle("close");
+            n.classList.toggle("nav-border");
+            }
+        
+    </script>
 
 </body>
 </html>
