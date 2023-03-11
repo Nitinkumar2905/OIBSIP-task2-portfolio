@@ -31,7 +31,7 @@
 }
 
 .background, .background:before {
-    height: 89.4vh;
+    height: 100vhvh;
     min-height: 500px;
     width: 100%;
     
@@ -51,9 +51,9 @@
     content: "";
     left: 0;
     min-width: inherit;
-    opacity: .4;
+    opacity: .2;
     position: absolute;
-    height: 89.4vh;
+    height: 100vh;
     top: 20;
     z-index: -1;
 }
