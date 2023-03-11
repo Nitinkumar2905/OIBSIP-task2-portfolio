@@ -2,7 +2,15 @@
 module.exports = {
   content: ["*"],
   theme: {
-    extend: {},
+    extend: {
+      backgroundImage:{
+        "hero-pattern": "url('/img/hero.png')"
+      },
+      sepia: {
+        // 25: '.25',
+        75: '.50',
+      }
+    },
   },
   plugins: [],
 }
