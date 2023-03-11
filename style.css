@@ -19,10 +19,41 @@
 
     .close{
         display: none;
+        
     }
 
     .nav-border{
         border-bottom: 1px solid gray;
     }
+    .menu-border{
+        border-bottom: 1px solid gray;
+    }
+}
 
+.background, .background:before {
+    height: 89.4vh;
+    min-height: 500px;
+    width: 100%;
+    
+}
+
+
+.background {
+    background: rgba(0,0,0,.5);
+    background-size: cover;
+    position: relative;
+}
+
+.background:before{
+    background: url(https://media.giphy.com/media/dWesBcTLavkZuG35MI/giphy.gif) no-repeat 50%;
+    /* background-position: top; */
+    background-size: cover;
+    content: "";
+    left: 0;
+    min-width: inherit;
+    opacity: .4;
+    position: absolute;
+    height: 89.4vh;
+    top: 20;
+    z-index: -1;
 }
