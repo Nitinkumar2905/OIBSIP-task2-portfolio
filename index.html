@@ -7,12 +7,12 @@
     <title>Portfolio</title>
     <link rel="stylesheet" href="./style.css">
 </head>
-<body id="home" class="bg-slate-900 h-[220vh] border-0 text-black background">
+<body id="home" class="bg-slate-900 h-[220vh] border-0 background">
     <!-- header section -->
-    <header id="header" class=" z-10 shadow bg-gray-200 md:bg-transparent  sticky top-0 left-0 w-full md:mx-auto lg:pl-16 block md:flex h-20 ">
+    <header id="header" class="text-black z-10 shadow bg-gray-200 md:bg-transparent  sticky top-0 left-0 w-full md:mx-auto lg:pl-16 block md:flex h-20 ">
         <nav class="nav-border flex w-full md:w-1/4 h-full items-center">
             <div class="px-2 w-fit absolute left-10 flex items-end space-x-2">
-                <span class="text-gray-700 sm:hover:text-black cursor-pointer text-3xl font-medium"><a href="home">Portfolio</a></span>
+                <span class=" sm:hover:text-black cursor-pointer text-3xl font-medium"><a href="home">Portfolio</a></span>
             </div>
 
             <button onclick="myFunction()" class="absolute right-10 md:hidden cursor-pointer">
@@ -38,12 +38,12 @@
         <!-- main section -->
        <menu class=" hidden md:flex md:w-[60%] lg:justify-end border-0 items-center mx-auto h-full ">
             <ul class="flex md:flex-row w-fit border-0 h-full items-center md:space-x-3 lg:space-x-7 xl:space-x-12">
-                <li class="text-gray-700 transition-all font-semibold  w-[24vw] md:w-fit mx-auto border-0 sm:hover:text-gray-900 text-2xl"><a class="ml-10 md:ml-0" href="#home">Home</a></li>
-                <li class="text-gray-700 transition-all font-semibold  w-[24vw] md:w-fit mx-auto border-0 sm:hover:text-gray-900 text-2xl"><a class="ml-10 md:ml-0" href="#about">About</a></li>
-                <li class="text-gray-700 transition-all font-semibold  w-[24vw] md:w-fit mx-auto border-0 sm:hover:text-gray-900 text-2xl"><a class="ml-10 md:ml-0" href="#services">Services</a></li>
-                <li class="text-gray-700 transition-all font-semibold  w-[24vw] md:w-fit mx-auto border-0 sm:hover:text-gray-900 text-2xl"><a class="ml-10 md:ml-0" href="#projects">Projects</a></li>
-                <li class="text-gray-700 transition-all font-semibold  w-[24vw] md:w-fit mx-auto border-0 sm:hover:text-gray-900 text-2xl"><a class="ml-10 md:ml-0" href="#skills">Skills</a></li>
-                <li class="text-gray-700 transition-all font-semibold  w-[24vw] md:w-fit mx-auto border-0 sm:hover:text-gray-900 text-2xl"><a class="ml-10 md:ml-0" href="#contact">Contact</a></li>
+                <li class="transition-all font-semibold  w-[24vw] md:w-fit mx-auto border-0 sm:hover:text-gray-900 text-2xl"><a class="ml-10 md:ml-0" href="#home">Home</a></li>
+                <li class="transition-all font-semibold  w-[24vw] md:w-fit mx-auto border-0 sm:hover:text-gray-900 text-2xl"><a class="ml-10 md:ml-0" href="#about">About</a></li>
+                <li class="transition-all font-semibold  w-[24vw] md:w-fit mx-auto border-0 sm:hover:text-gray-900 text-2xl"><a class="ml-10 md:ml-0" href="#services">Services</a></li>
+                <li class="transition-all font-semibold  w-[24vw] md:w-fit mx-auto border-0 sm:hover:text-gray-900 text-2xl"><a class="ml-10 md:ml-0" href="#projects">Projects</a></li>
+                <li class="transition-all font-semibold  w-[24vw] md:w-fit mx-auto border-0 sm:hover:text-gray-900 text-2xl"><a class="ml-10 md:ml-0" href="#skills">Skills</a></li>
+                <li class="transition-all font-semibold  w-[24vw] md:w-fit mx-auto border-0 sm:hover:text-gray-900 text-2xl"><a class="ml-10 md:ml-0" href="#contact">Contact</a></li>
             </ul>
        </menu>
     </header>
@@ -83,16 +83,18 @@
             n.classList.toggle("nav-border");
             }
         
-        let header = document.getElementsByTagName('header')[0];
+        let header = document.getElementById('header');
         // trigger this function every time the user scrolls
         window.onscroll = function(event){
         //     let scroll = window.pageYOffset;
-            if(scrollY >= 20){
+            if(scrollY >= 70){
                 //white
-                header.style.backgroundColor = 'gray'
+                header.style.backgroundColor = 'gray';
+                header.style.color = 'white';
             }
             else{
                 header.style.backgroundColor = 'transparent'
+                header.style.color = 'black';
 
             }
         }
